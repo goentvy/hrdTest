@@ -1,7 +1,10 @@
-package entvy.tableclass;
+package entvy.main;
 
 import java.util.List;
 
+import entvy.dto.Book;
+import entvy.dto.Member;
+import entvy.dto.Rental;
 import entvy.mariadb.CRUD;
 
 public class BookDataList {
@@ -32,7 +35,8 @@ public class BookDataList {
 			    new Member(17, "신민아", "010-1717-1919", "ShinMinAh@daum.net"),
 			    new Member(18, "이민호", "010-2020-2222", "LeeMinHo@hanmail.net"),
 			    new Member(19, "박신혜", "010-2323-2525", "ParkShinHye@gmail.com"),
-			    new Member(20, "정해인", "010-2626-2828", "JungHaeIn@naver.com")
+			    new Member(20, "정해인", "010-2626-2828", "JungHaeIn@naver.com"),
+			    new Member(21, "이주환", "010-1234-4321", "lee@naver.com")
 			);
 			
 			crud.insertDataBatch("member", members);
@@ -84,7 +88,9 @@ public class BookDataList {
 			    new Rental(17, 17, 14, "2022", "2023"),
 			    new Rental(18, 18, 16, "2021", "2022"),
 			    new Rental(19, 19, 18, "2020", "2021"),
-			    new Rental(20, 20, 20, "2019", "2020")
+			    new Rental(20, 20, 20, "2019", "2020"),
+			    new Rental(21, 8, 3, "2023", "2024"),
+			    new Rental(22, 8, 5, "2023", "2024")
 			);
 	
 			crud.insertDataBatch("rental", rentals);
